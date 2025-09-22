@@ -19,7 +19,7 @@ module.exports = {
       }
       let apiUrl;
       if (model === 'deepseek') {
-        apiUrl = `https://nirkyy-dev.hf.space/api/v1/deepseek?query=${encodeURIComponent(query)}`;
+        apiUrl = `https://api.neoxr.eu/api/blackbox?q=${encodeURIComponent(query)}&apikey=xb5vea`;
       } else if (model === 'gemini') {
         const systemPrompt = 'You are a helpful assistant that answers questions about anything in the world';
         apiUrl = `https://nirkyy-dev.hf.space/api/v1/writecream-gemini?system=${encodeURIComponent(systemPrompt)}&query=${encodeURIComponent(query)}`;
